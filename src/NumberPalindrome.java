@@ -4,7 +4,6 @@ public class NumberPalindrome {
 
         int reverse = 0;
         int digit;
-        int count = 0;
         int initNumber = number;
         boolean isPalindrome = false;
 
@@ -12,7 +11,6 @@ public class NumberPalindrome {
             digit = number % 10;
             reverse = digit + (reverse * 10);
             number /= 10;
-            count++;
         }
 
         if ( initNumber == reverse) {
